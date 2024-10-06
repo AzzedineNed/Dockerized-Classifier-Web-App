@@ -57,7 +57,7 @@ Open your web browser and navigate to [http://localhost:5000](http://localhost:5
 - **upload.html:** Front-end interface for uploading an image.
   ![Upload Image](upload.PNG) 
 - **result.html:** Displays the classification result and the uploaded image.
-  ![Result Image](result.png) 
+  ![Result Image](result.PNG) 
 
 ### Conclusion
 
