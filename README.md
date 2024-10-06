@@ -1,7 +1,5 @@
 # Dockerized Classifier Web App
-
 This project is a simple Flask web application that uses a pre-trained ResNet50 model to classify images of cats and dogs. The primary purpose of this project is to explore Docker and containerize a Flask application.
-
 ## Project Structure
 ├── .dockerignore<br>
 ├── .gitignore <br>
