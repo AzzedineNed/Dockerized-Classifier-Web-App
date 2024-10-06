@@ -33,6 +33,7 @@ This project is a simple Flask web application that uses a pre-trained ResNet50 
 
 ```bash
 git clone https://github.com/your-username/dockerized-classifier-web-app.git
+```bash
 cd dockerized-classifier-web-app
 
 
