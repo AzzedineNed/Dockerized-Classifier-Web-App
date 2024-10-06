@@ -35,31 +35,4 @@ This project is a simple Flask web application that uses a pre-trained ResNet50 
 git clone https://github.com/your-username/dockerized-classifier-web-app.git
 cd dockerized-classifier-web-app
 
-### Step 2: Build the Docker image
-
-```bash
-docker build -t flask-tensorflow-app .
-
-### Step 3: Run the Docker container
-
-```bash
-docker run -p 5000:5000 flask-tensorflow-app
-
-### Step 4: Access the Application
-
-Open your web browser and navigate to [http://localhost:5000](http://localhost:5000). You can upload an image to see the predicted class and confidence score.
-
-### Key Files
-
-- **predict.py:** Contains the main Flask app and the TensorFlow model code for image classification.
-- **Dockerfile:** Defines the Docker container environment, installs dependencies, and sets up the Flask app.
-- **requirements.txt:** Lists all Python packages required for the project, such as TensorFlow, Flask, and OpenCV.
-- **upload.html:** Front-end interface for uploading an image.
-  ![Upload Image](upload.PNG) 
-- **result.html:** Displays the classification result and the uploaded image.
-  ![Result Image](result.PNG) 
-
-### Conclusion
-
-This project serves as a practical demonstration of using Docker to containerize a simple Flask web app that performs image classification using TensorFlow and OpenCV. While the web app itself is basic, the focus was on learning and experimenting with Docker.
 
