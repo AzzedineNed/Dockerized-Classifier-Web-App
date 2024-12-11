@@ -11,11 +11,11 @@ This project is a simple Flask web application that uses a pre-trained ResNet50 
 ## How to Run the Project
 ### Step 1: Clone the repository
 ```bash
-git clone https://github.com/AzzedineNed/dockerized-classifier-web-app.git
+git clone https://github.com/AzzedineNed/Dockerized-Classifier-Web-App.git
 ```
 ### CD to the repo
 ```bash
-cd dockerized-classifier-web-app
+cd Dockerized-Classifier-Web-App
 ```
 ### Step 2: Build the Docker image
 ```bash
