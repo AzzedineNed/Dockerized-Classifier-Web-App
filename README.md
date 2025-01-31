@@ -4,7 +4,7 @@
    pip install pymupdf
 ```
 
-2. **Run the PDF extraction script:**:
+2. **Run extract_text_from_pdf.py:**:
 ```bash
 python extract_text_from_pdf.py
 ```
@@ -19,7 +19,7 @@ Paste the copied content from SAMPLE_TEXT_FOR_BENCH.txt into the SAMPLE_TEXT_FOR
 SAMPLE_TEXT_FOR_BENCH = "..."  # Paste the extracted content here
 ```
 
-5. **Run the PDF extraction script:**:
+5. **Run the PDF extraction script:**
 Once you've completed the necessary modifications, run the tests using the following command:
 ```bash
 python -m pytest _etl_a9number_v3.py
