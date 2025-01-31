@@ -4,7 +4,7 @@
    pip install pymupdf
 ```
 
-2. **Run extract_text_from_pdf.py:**:
+2. **Run the extract_text_from_pdf.py: script**
 ```bash
 python extract_text_from_pdf.py
 ```
