@@ -1,42 +1,27 @@
-# Dockerized Classifier Web App
-This project is a simple Flask web application that uses a pre-trained ResNet50 model to classify images of cats and dogs. The primary purpose of this project is to explore Docker and containerize a Flask application.
-
-## Features
-- **Image Upload:** Users can upload an image through the web interface.
-- **Image Classification:** The app uses a ResNet50 model to classify the uploaded image as either a cat or a dog.
-- **Dockerized Application:** The entire app is containerized using Docker, making it easy to run in any environment.
-## Requirements
-- **Docker:** Ensure Docker is installed on your system.
-- **Python 3.9** (for local development, if necessary).
-## How to Run the Project
-### Step 1: Clone the repository
+# Installation and Running Instructions
+1. **Install the required dependency**:
 ```bash
-git clone https://github.com/AzzedineNed/Dockerized-Classifier-Web-App.git
+   pip install pymupdf
 ```
-### CD to the repo
-```bash
-cd Dockerized-Classifier-Web-App
-```
-### Step 2: Build the Docker image
-```bash
-docker build -t flask-tensorflow-app .
-```
-### Step 3: Run the Docker container
-```bash
-docker run -p 5000:5000 flask-tensorflow-app
-```
-### Step 4: Access the Application
-Open your web browser and navigate to [http://localhost:5000](http://localhost:5000). You can upload an image to see the predicted class and confidence score.
-### Key Files
-- **predict.py:** Contains the main Flask app and the TensorFlow model code for image classification.
-- **Dockerfile:** Defines the Docker container environment, installs dependencies, and sets up the Flask app.
-- **requirements.txt:** Lists all Python packages required for the project, such as TensorFlow, Flask, and OpenCV.
-- **upload.html:** Front-end interface for uploading an image.
-  ![Upload Image](upload.PNG) 
-- **result.html:** Displays the classification result and the uploaded image.
-  ![Result Image](result.PNG) 
-### Conclusion
-This project serves as a practical demonstration of using Docker to containerize a simple Flask web app that performs image classification using TensorFlow and OpenCV. While the web app itself is basic, the focus was on learning and experimenting with Docker.
 
+2. **Run the PDF extraction script:**:
+```bash
+python extract_text_from_pdf.py
+```
 
+3. **Copy the extracted text:**:
+After running the script, the text will be saved in SAMPLE_TEXT_FOR_BENCH.txt. Open this file and copy its content.
 
+4. **Update the constant in the Python file**:
+Paste the copied content from SAMPLE_TEXT_FOR_BENCH.txt into the SAMPLE_TEXT_FOR_BENCH constant in the Python
+```python
+# TODO 1: the text extracted from the PDF needs to be added inside this constant
+SAMPLE_TEXT_FOR_BENCH = "..."  # Paste the extracted content here
+```
+
+5. **Run the PDF extraction script:**:
+Once you've completed the necessary modifications, run the tests using the following command:
+```bash
+python -m pytest _etl_a9number_v3.py
+```
+   
