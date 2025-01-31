@@ -13,7 +13,7 @@ python extract_text_from_pdf.py
 After running the script, the text will be saved in SAMPLE_TEXT_FOR_BENCH.txt. Open this file and copy its content.
 
 4. **Update the constant in _etl_a9number_v3.py script**:
-Paste the copied content from SAMPLE_TEXT_FOR_BENCH.txt into the SAMPLE_TEXT_FOR_BENCH constant in the Python
+Paste the copied content from SAMPLE_TEXT_FOR_BENCH.txt into the SAMPLE_TEXT_FOR_BENCH constant in _etl_a9number_v3.py
 ```python
 # TODO 1: the text extracted from the PDF needs to be added inside this constant
 SAMPLE_TEXT_FOR_BENCH = "..."  # Paste the extracted content here
